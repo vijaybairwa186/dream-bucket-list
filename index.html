@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My dream Bucket list</title>
+    <style>
+        body {
+            font-family: 'Segoe Ul', sans-serif;
+            background-color: #d5d4d4;
+            color: #aac1ba;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        h1 {
+            color: #474141;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .bucket-list {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .bucket-list li {
+            background-color: #f8f0f0;
+            border: 2px solid #d1bebe;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .bucket-list li:hover {
+            background-color: #f0e0e0;
+            transform: scale(1.02);
+        }
+
+        .completed {
+            color: #2e7d32;
+            text-decoration: line-through;
+        }
+
+        .pending {
+            color: #d32f2f;
+        }
+
+        .bucket-list li.completed::before {
+            content: "✅ ";
+            margin-right: 10px;
+        }
+
+        .bucket-list li.pending::before {
+            content: "⏳ ";
+            margin-right: 10px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .bucket-list li {
+                font-size: 1em;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Dream Bucket List</h1>
+    <ul class="bucket-list">
+        <li class="completed">📖 Read 10 inspiring books</li>
+        <li class="completed">🧠 Learn a new skill (like coding, painting, or public speaking)</li>
+        <li class="pending">🌍 Visit a historical place in your country</li>
+        <li class="completed">💡 Build your first small project (website, science model, etc.)</li>
+        <li class="completed">🎤 Participate in a school or college competition</li>
+        <li class="completed">📝 Start a daily journal for 30 days</li>
+        <li class="pending">🧘‍♂️ Practice meditation or yoga for 7 days</li>
+        <li class="completed">📚 Score 90%+ in your favorite subject</li>
+        <li class="pending">🧳 Go on an educational trip</li>
+        <li class="completed">👨‍🏫 Help a friend in studies or teach someone something
+        </li>
+    </ul>
+</body>
+
+</html>
